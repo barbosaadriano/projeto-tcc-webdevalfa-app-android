@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="PORTA 2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="74dp"
+            android:layout_marginEnd="74dp"
+            android:id="@+id/tvStatusPorta2"
+            android:layout_alignBaseline="@+id/tvStatusPorta1"
+            android:layout_alignBottom="@+id/tvStatusPorta1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="PORTA 1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="71dp"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/tvStatusPorta1"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="ACIONAR "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvStatusPorta1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="53dp"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="24dp"
+            android:id="@+id/btnPorta1" />
+
+        <Button
+            android:text="ACIONAR "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPorta2"
+            android:layout_alignTop="@+id/btnPorta1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="58dp"
+            android:layout_marginEnd="58dp" />
+
+        <TextView
+            android:text="PORTA 3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvStatusPorta3"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/tvStatusPorta1"
+            android:layout_alignStart="@+id/tvStatusPorta1" />
+
+        <TextView
+            android:text="PORTA 4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvStatusPorta4"
+            android:layout_alignBaseline="@+id/tvStatusPorta3"
+            android:layout_alignBottom="@+id/tvStatusPorta3"
+            android:layout_alignLeft="@+id/tvStatusPorta2"
+            android:layout_alignStart="@+id/tvStatusPorta2" />
+
+        <Button
+            android:text="ACIONAR "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:id="@+id/btnPorta3"
+            android:layout_below="@+id/tvStatusPorta3"
+            android:layout_alignLeft="@+id/btnPorta1"
+            android:layout_alignStart="@+id/btnPorta1" />
+
+        <Button
+            android:text="ACIONAR "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPorta4"
+            android:layout_alignBaseline="@+id/btnPorta3"
+            android:layout_alignBottom="@+id/btnPorta3"
+            android:layout_alignLeft="@+id/btnPorta2"
+            android:layout_alignStart="@+id/btnPorta2" />
+
+        <TextView
+            android:text="CONNECTION STATUS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnPorta4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="67dp"
+            android:id="@+id/tvConnectionStatus" />
+
+        <Button
+            android:text="Configurações"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnConfig"
+            android:layout_alignBottom="@+id/toolbar"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/btnPorta2"
+            android:layout_alignStart="@+id/btnPorta2" />
+
+        <Button
+            android:text="Eventos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLista"
+            android:layout_above="@+id/tvStatusPorta1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/btnPorta1"
+            android:layout_alignEnd="@+id/btnPorta1" />
+
+    </RelativeLayout>
+</ScrollView>

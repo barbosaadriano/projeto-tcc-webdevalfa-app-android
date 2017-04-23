@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="Descrição"
+        android:id="@+id/tvDescricao"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDescricao"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvMomento"
+        android:text="Momento" />
+
+    <TextView
+        android:text="dados"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tvDescricao"
+        android:layout_toRightOf="@+id/tvMomento"
+        android:layout_toEndOf="@+id/tvMomento"
+        android:id="@+id/tvDados"
+        android:textSize="25sp" />
+
+    <TextView
+        android:text="dispositivo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMomento"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvDispositivo" />
+
+    <TextView
+        android:text="Local"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDispositivo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvLocal" />
+</RelativeLayout>
