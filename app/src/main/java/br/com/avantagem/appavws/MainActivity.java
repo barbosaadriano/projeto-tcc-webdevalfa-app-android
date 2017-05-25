@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements Runnable, View.On
     private Button bt2 ;
     private Button bt3 ;
     private Button bt4 ;
+    private Button btnTc;
     private  TextView tvConnectionStatus;
     Intent telaEvents;
     @Override
@@ -76,6 +77,14 @@ public class MainActivity extends AppCompatActivity implements Runnable, View.On
         verificaStatusDasPortas();
         handler = new Handler();
         handler.postDelayed(this,10000);
+        btnTc = (Button) findViewById(R.id.btnTesteChart);
+        btnTc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), WebViewer.class);
+                startActivity(i);
+            }
+        });
     }
     private void checkServiceURL(){
         SharedPreferences settings = getSharedPreferences(APP_CONFIG, 0);

@@ -106,15 +106,6 @@
             android:layout_alignLeft="@+id/btnPorta2"
             android:layout_alignStart="@+id/btnPorta2" />
 
-        <TextView
-            android:text="CONNECTION STATUS"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btnPorta4"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="67dp"
-            android:id="@+id/tvConnectionStatus" />
-
         <Button
             android:text="Configurações"
             android:layout_width="wrap_content"
@@ -136,6 +127,28 @@
             android:layout_alignParentStart="true"
             android:layout_alignRight="@+id/btnPorta1"
             android:layout_alignEnd="@+id/btnPorta1" />
+
+        <TextView
+            android:text="CONNECTION STATUS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvConnectionStatus"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="34dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginBottom="57dp" />
+
+        <Button
+            android:text="Chart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnPorta3"
+            android:layout_toRightOf="@+id/btnPorta3"
+            android:layout_toEndOf="@+id/btnPorta3"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnTesteChart" />
 
     </RelativeLayout>
 </ScrollView>

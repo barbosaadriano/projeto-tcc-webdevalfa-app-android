@@ -20,7 +20,10 @@
         </activity>
         <activity android:name=".Configuration" />
         <activity android:name=".LastEvents" />
-        <activity android:name=".Graph"></activity>
+        <activity android:name=".Graph" />
+        <activity
+            android:name=".WebViewer"
+            android:label="@string/title_activity_web_viewer"></activity>
     </application>
 
 </manifest>
