@@ -91,7 +91,7 @@ public class LastEvents extends AppCompatActivity implements Runnable, AdapterVi
         mostraGrafico();
     }
     public void mostraGrafico(){
-        Intent intent = new Intent(this,Graph.class);
+        Intent intent = new Intent(this,WebViewer.class);
         Bundle params = new Bundle();
         params.putString("url",serviceURL);
         intent.putExtras(params);

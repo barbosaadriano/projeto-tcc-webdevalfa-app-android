@@ -140,15 +140,5 @@
             android:layout_marginStart="34dp"
             android:layout_marginBottom="57dp" />
 
-        <Button
-            android:text="Chart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btnPorta3"
-            android:layout_toRightOf="@+id/btnPorta3"
-            android:layout_toEndOf="@+id/btnPorta3"
-            android:layout_marginTop="20dp"
-            android:id="@+id/btnTesteChart" />
-
     </RelativeLayout>
 </ScrollView>
